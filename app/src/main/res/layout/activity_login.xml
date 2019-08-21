@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:paddingTop="64dp"
+    tools:context=".Login">
+
+    <RelativeLayout
+        android:id="@+id/login_R1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="40dp">
+
+        <ImageView
+            android:id="@+id/login_logo"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/sign_logo" />
+
+        <TextView
+            android:id="@+id/login_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login_logo"
+            android:layout_marginTop="16dp"
+            android:text="Welcome,"
+            android:textColor="#000000"
+            android:textSize="32sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/login_text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login_text1"
+            android:text="Sign in to continue"
+            android:textSize="32sp"
+            android:textStyle="normal" />
+
+        <EditText
+            android:id="@+id/login_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login_text2"
+            android:layout_marginTop="64dp"
+            android:hint=" Username"
+            android:inputType="textPersonName"
+            android:textColorHint="#D3D3D3"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/login_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login_username"
+            android:layout_marginTop="32dp"
+            android:hint=" Password"
+            android:inputType="textPassword"
+            android:textColorHint="#D3D3D3"
+            android:textSize="14sp" />
+
+        <CheckBox
+            android:id="@+id/login_remember"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_below="@id/login_password"
+            android:checked="false"
+            android:text="remember"
+            android:textColor="#515151"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/login_login"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login_remember"
+            android:layout_marginTop="64dp"
+            android:layout_marginEnd="72dp"
+            android:background="@drawable/login_login"
+            android:text="Get Started"
+            android:textAllCaps="false"
+            android:textColor="#f1efef"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/login_sign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="64dp"
+        android:clickable="true"
+        android:text="no account? sign up"
+        android:textColor="@color/login_sign"
+        android:textSize="12sp"
+        android:textStyle="normal" />
+
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:id="@+id/group_1">
+        <item
+            android:id="@+id/side_account"
+            android:icon="@drawable/side_account"
+            android:title="账号"/>
+        <item
+            android:id="@+id/side_score"
+            android:icon="@drawable/side_score"
+            android:title="积分"/>
+        <item
+            android:id="@+id/side_notifications"
+            android:icon="@drawable/side_notifications"
+            android:title="消息"/>
+        <item
+            android:id="@+id/side_privacy"
+            android:icon="@drawable/side_privacy"
+            android:title="隐私"/>
+        <item
+            android:id="@+id/side_general"
+            android:icon="@drawable/side_general"
+            android:title="通用"/>
+    </group>
+    <group android:id="@+id/group_2">
+        <item
+            android:id="@+id/side_about"
+            android:icon="@drawable/side_about"
+            android:title="关于"/>
+        <item
+            android:id="@+id/side_help"
+            android:icon="@drawable/side_help"
+            android:title="帮助和反馈"/>
+    </group>
+    <group android:id="@+id/group_3">
+        <item
+            android:id="@+id/side_out"
+            android:icon="@drawable/side_out"
+            android:title="退出登录"/>
+    </group>
+</menu>

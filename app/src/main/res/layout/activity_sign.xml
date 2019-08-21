@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Sign"
+    android:background="#FFFFFF"
+    android:paddingTop="64dp">
+
+    <RelativeLayout
+        android:id="@+id/sign_R1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="40dp">
+
+        <ImageView
+            android:id="@+id/sign_logo"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/sign_logo"/>
+        <TextView
+            android:id="@+id/sign_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign Up,"
+            android:textSize="32sp"
+            android:textColor="#000000"
+            android:textStyle="normal"
+            android:layout_below="@id/sign_logo"
+            android:layout_marginTop="16dp"/>
+        <TextView
+            android:id="@+id/sign_text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="enter your account"
+            android:textSize="32sp"
+            android:textStyle="normal"
+            android:layout_below="@id/sign_text1"/>
+        <EditText
+            android:id="@+id/sign_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=" Username"
+            android:inputType="textPersonName"
+            android:textSize="14sp"
+            android:textColorHint="#D3D3D3"
+            android:layout_below="@id/sign_text2"
+            android:layout_marginTop="64dp"/>
+        <EditText
+            android:id="@+id/sign_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=" Password"
+            android:inputType="textPassword"
+            android:textSize="14sp"
+            android:textColorHint="#D3D3D3"
+            android:layout_below="@id/sign_username"
+            android:layout_marginTop="32dp"/>
+        <EditText
+            android:id="@+id/sign_repassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=" Confirm password"
+            android:inputType="textPassword"
+            android:textSize="14sp"
+            android:textColorHint="#D3D3D3"
+            android:layout_below="@id/sign_password"
+            android:layout_marginTop="32dp"/>
+        <Button
+            android:id="@+id/sign_sign"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sign_repassword"
+            android:layout_marginTop="64dp"
+            android:layout_marginEnd="72dp"
+            android:background="@drawable/login_login"
+            style="?android:attr/borderlessButtonStyle"
+            android:text="Ready Now"
+            android:textSize="16sp"
+            android:textColor="#f1efef"
+            android:textAllCaps="false" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/sign_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="32dp"
+        android:text="had accounts? sign in"
+        android:clickable="true"
+        android:textColor="@color/login_sign"
+        android:textSize="12sp"
+        android:textStyle="normal"/>
+
+</RelativeLayout>

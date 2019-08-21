@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="home_tablayout" parent="Base.Widget.Design.TabLayout">
+        <item name="tabBackground">@color/colorWhite</item>
+        <item name="tabIndicatorColor">@color/colorAccent</item>
+        <item name="tabIndicatorHeight">2dp</item>
+        <item name="tabSelectedTextColor">@color/colorAccent</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+</resources>
